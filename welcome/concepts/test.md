@@ -1,8 +1,8 @@
 ---
 type: Reference
 title: test
-description: A test wiki page containing cross-links to other wiki pages.
-resource: /wiki/welcome/test
+description: A test wiki page containing self-referencing and cross-referencing wiki links.
+resource: /wiki/welcome/source/test
 tags: [test, placeholder]
 timestamp: 2025-04-13T18:09:22+00:00
 ---
