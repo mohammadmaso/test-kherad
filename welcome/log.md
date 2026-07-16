@@ -1,6 +1,6 @@
 ## 2025-04-13
 
-- **Creation**: Initial compile of the Welcome knowledge bundle. Two source pages indexed: `kk` (jjj) and `test`. Both contain placeholder/test content only. Concepts created: `concepts/jjj.md`, `concepts/test.md`, `index.md`, `log.md`.
+- **Creation**: Initial compile of the Welcome knowledge bundle. Two source pages indexed: `kk` (jjj) and `test` (test). Both contain placeholder/test content only. Concepts created: `concepts/jjj.md`, `concepts/test.md`, `index.md`, `log.md`.
 
 ## 2025-04-14
 
@@ -21,3 +21,11 @@
 - **Creation**: `concepts/technical-document-template.md` — source page `ss` (wiki) provides a versatile technical document template/outline.
 - **Preserved**: `concepts/test.md` — content unchanged from source.
 - **Update**: `index.md` refreshed to list all four concepts. Removed note about inaccessible `kkf` page.
+
+## 2025-04-17
+
+- **Creation**: `concepts/rkkk.md` — source page `rkkk` added. Contains minimal test/placeholder content (`jjjj;jpo`).
+- **Creation**: `concepts/coronavirus-prevention.md` — source page `پیشگیری-از-کرونا` added. Contains a Persian-language COVID-19 prevention guide covering hand hygiene, respiratory etiquette, and self-isolation.
+- **Creation**: `concepts/vaghtesheh-prd.md` — source page `وقتشه-product-requirements-document-mvp` added. Contains a full PRD for the وقتشه appointment scheduling and clinic management platform (MVP scope).
+- **Preserved**: All 4 existing concept documents (`compile3`, `jjj`, `technical-document-template`, `test`) unchanged — their source pages were not modified.
+- **Update**: `index.md` refreshed to list all 7 concepts.
