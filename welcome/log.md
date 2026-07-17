@@ -29,3 +29,9 @@
 - **Creation**: `concepts/vaghtesheh-prd.md` — source page `وقتشه-product-requirements-document-mvp` added. Contains a full PRD for the وقتشه appointment scheduling and clinic management platform (MVP scope).
 - **Preserved**: All 4 existing concept documents (`compile3`, `jjj`, `technical-document-template`, `test`) unchanged — their source pages were not modified.
 - **Update**: `index.md` refreshed to list all 7 concepts.
+
+## 2025-04-18
+
+- **Update**: `concepts/compile3.md` — source page `kkf` (compile3) was updated with additional content describing a rollback incident (profile page reverted to old style due to parallel concurrent edits). Document refreshed to include rollback details alongside the existing styling fixes and bug report.
+- **Creation**: `concepts/sib-apple.md` — new source page `سیب` added. Contains a Persian-language nutritional guide about apples (Malus domestica), covering vitamins, minerals, pectin, and washing/peeling recommendations.
+- **Update**: `index.md` refreshed to list all 8 concepts, including the new `sib-apple` entry and the updated `compile3` description.

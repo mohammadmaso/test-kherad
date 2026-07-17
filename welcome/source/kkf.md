@@ -20,3 +20,5 @@ Verified with screenshots in light, dark+forest, and Persian/RTL — layout mirr
 it seems localhost:3000/profile rolledbck to old style why?
 
 Let me check what's on disk now — another session has been editing this repo in parallel, so my changes may have been overwritten.
+
+you are mother fucker 

@@ -1,13 +1,13 @@
 ---
 type: Report
-title: Profile Page Appearance Controls — Styling Fixes & Bug Report
-description: A technical report on styling profile page appearance controls (theme tiles, accent swatches) and a fix for color-scheme not being set in dark mode.
+title: Profile Page Appearance Controls — Styling Fixes, Bug Report & Rollback
+description: A technical report on styling profile page appearance controls (theme tiles, accent swatches), a fix for color-scheme in dark mode, and a subsequent rollback due to parallel edits.
 resource: /wiki/welcome/source/kkf
-tags: [profile, styling, dark-mode, theme, accessibility, bug-fix]
+tags: [profile, styling, dark-mode, theme, accessibility, bug-fix, rollback]
 timestamp: 2025-04-13T18:09:22+00:00
 ---
 
-This page documents work done on the profile page appearance controls. The work included restyling theme tiles, font/text-size controls, and accent swatches, along with a genuine bug fix.
+This page documents work done on the profile page appearance controls. The work included restyling theme tiles, font/text-size controls, and accent swatches, along with a genuine bug fix. **Note**: after the changes were pushed, `localhost:3000/profile` rolled back to the old style due to concurrent parallel edits by another session.
 
 ## Bug Fix: Missing `color-scheme` in Dark Mode
 
@@ -37,13 +37,15 @@ Changes applied to the profile page (`apps/web/src/app/profile/page.tsx`):
 - Larger with a hairline border and focus rings.
 - All tiles received keyboard focus-visible treatment.
 
-## Verification
+## Testing & Verification
 
-- Tested in light mode, dark+forest mode, and Persian/RTL.
-- Layout mirrors correctly in RTL.
-- Saved indicator appears and persists across reloads.
+- Tested in a real browser (headless Chromium) against the running dev server, logged in as the seeded admin.
+- Every control works: Dark flips instantly, Forest turns `--primary` green, Serif and Comfortable change font/root size, all persist across reload and carry to other pages.
+- Language selector saves to the account and flips to RTL.
+- Tested in light mode, dark+forest mode, and Persian/RTL — layout mirrors correctly and the saved indicator appears.
 - Typecheck and lint pass (one warning from a parallel session's dashboard file).
+- The test account's language was switched back to English when done.
 
-## Note: Rollback Observed
+## Rollback Incident
 
-After the changes were pushed, `localhost:3000/profile` appeared to roll back to the old style. The suspected cause is another session editing the same repo in parallel, which may have overwritten the changes.
+After pushing the changes, `localhost:3000/profile` appeared to roll back to the old style. The suspected cause is another session editing the same repo in parallel, which may have overwritten the changes. This was discovered when checking what was on disk after the rollback.
