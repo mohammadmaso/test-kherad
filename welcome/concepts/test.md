@@ -17,3 +17,9 @@ This page is a test/placeholder entry. It contains:
 ## Citations
 
 - [jjj](/concepts/jjj.md) — the sister test page linked from this page.
+---
+type: Reference
+title: test (edited)
+---
+
+Edited via API smoke test.
